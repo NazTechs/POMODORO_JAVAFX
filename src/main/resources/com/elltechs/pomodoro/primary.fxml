@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane1" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.elltechs.pomodoro.PrimaryController">
+   <children>
+      <AnchorPane fx:id="TimerID" prefHeight="800.0" prefWidth="43.0" />
+      <Label fx:id="timer1" layoutX="240.0" layoutY="227.0" text="45:00">
+         <font>
+            <Font name="Tahoma" size="200.0" />
+         </font>
+      </Label>
+      <Label fx:id="clockTime" layoutX="37.0" layoutY="14.0" prefHeight="47.0" prefWidth="354.0" text="12:00:00">
+         <font>
+            <Font name="Tahoma Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="101.0" fitWidth="249.0" layoutX="37.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../IMG_20221205_162907.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="WorkLabelID" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="543.0" prefHeight="106.0" prefWidth="938.0" text="Puase" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="62.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
