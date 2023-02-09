@@ -1,8 +1,14 @@
 # POMODORO_JAVAFX
 
-This code is a JavaFX application that implements a Pomodoro Timer. The Pomodoro technique is a time management method used to increase productivity. The code uses a TimerTask to update the current state of the Pomodoro timer based on the current time. The current state can be one of five states: LONG REST, PAUSE, POMODORO, SHORT REST, and FREE WORKING.
+The code is a JavaFX-based Pomodoro timer, which is optimized for running on a Banana Pi M2 Zero device with an Allwinner H2 processor. The code implements a Pomodoro timer, which is a time management technique that helps individuals to work efficiently by breaking work into intervals, usually 25 minutes in length, separated by short breaks. The Pomodoro timer is designed to increase productivity and focus.
+
+The code consists of a main class called "PrimaryController" that implements the Initializable interface. The class has several instance variables that are used to store the state of the timer, the current time, and the remaining time. It also contains several switch cases that determine what actions to take based on the state of the timer.
+
+
 
 ![SEQ3](https://user-images.githubusercontent.com/24310606/217923360-1a5977bf-5199-490f-b5f0-2ef2b33a83e0.gif)
 
-The code also includes methods for each state: longrestFunc(), pauseFunc(), pomodoroFunc(), shortrestFunc(), and freeworkFunc(). For example, the pomodoroFunc() method is executed when the state is set to POMODORO. In this method, the remaining time of the current POMODORO state is calculated and displayed on the timer. The code also includes some media player functionality, but it's commented out.
+The "initialize" method creates a timer and a timer task that updates the time and state of the timer every second. The method also implements switch cases that determine what actions to take based on the state of the timer, such as playing a sound when the timer is in the pomodoro state and the remaining time is less than three seconds.
+
+The code also includes several private methods such as "pauseFunc," "pomodoroFunc," "shortrestFunc," and "freeworkFunc," which are called by the switch cases in the "initialize" method to carry out the appropriate actions for each state of the timer.
 ![image](https://user-images.githubusercontent.com/24310606/217923255-299a8a90-6d11-4f97-82b7-a30969a323d7.png)
