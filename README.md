@@ -1,4 +1,4 @@
-# POMODORO_JAVAFX
+# Pomodoro in JAVAFX optimize for embedded
 
 The code is a JavaFX-based Pomodoro timer, which is optimized for running on a Banana Pi M2 Zero device with an Allwinner H2 processor. The code implements a Pomodoro timer, which is a time management technique that helps individuals to work efficiently by breaking work into intervals, usually 25 minutes in length, separated by short breaks. The Pomodoro timer is designed to increase productivity and focus.
 
