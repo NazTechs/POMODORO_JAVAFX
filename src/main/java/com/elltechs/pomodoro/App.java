@@ -20,9 +20,9 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        scene = new Scene(loadFXML("primary"), 1024, 800);
+        scene = new Scene(loadFXML("primary"), 1024, 600);
         stage.initStyle(StageStyle.UNDECORATED);
-
+       
         //Scale scale = new Scale();
         //scale.setX(0.5);
         //scale.setY(0.5);

@@ -61,10 +61,6 @@ public class PrimaryController implements Initializable {
             @Override
             public void run() {
 
-                Platform.runLater(() -> {
-
-                    clockTime.setText(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
-                });
                 Calendar c = Calendar.getInstance();
                 currentPoint = pl.findPpoint(c.get(Calendar.HOUR_OF_DAY), c.get(Calendar.MINUTE));
                 state = currentPoint.getpState();
@@ -94,8 +90,11 @@ public class PrimaryController implements Initializable {
                         freeworkFunc();
                         break;
                 }
-
+                Platform.runLater(() -> {
+                    clockTime.setText(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
+                });
             }
+
         ;
         };
         t.schedule(tt, new Date(), 1000);
